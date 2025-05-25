@@ -31,9 +31,6 @@ class TonePlayer:
     def __init__(self, ev3_sound: Sound):
         self.ev3_sound = ev3_sound
 
-    def play(self, note: str, length: str, volume: int = 30):
-        self.ev3_sound.tone(NOTE_FREQUENCIES[note], duration=NOTE_LENGTHS[length], volume=volume)
-
     def play_sequence(self, sequence: list[tuple[str, str]], volume: int = 30, tempo: int = 60):
         quarter_duration = 60 / tempo
 

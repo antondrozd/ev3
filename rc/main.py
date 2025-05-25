@@ -45,7 +45,7 @@ def main(stdscr) -> None:
                     elif key == ord('k'):
                         play_kyiv(tone_player)
                     elif key == ord(' '):
-                        tone_player.play('A4', 'eighth')
+                        sound.tone(440, duration=0.3, volume=30)
                     else:
                         command = ('stop', 0, 0)
 
